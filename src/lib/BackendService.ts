@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosRequestHeaders } from "axios";
 import { PromiseFunction } from "./types";
 import { backendUrl } from "../const";
 
@@ -41,8 +41,9 @@ const destroy: PromiseFunction = async (path, headers = {}, params = {}) => {
 
 const _generateParams = (headers = {}, params = {}) => {
     const localHeader = {
+        Authorization: `Bearer ${backendUrl.secretKey}`,
         ...headers,
-    };
+    } as AxiosRequestHeaders;
     return {
         headers: localHeader,
         params,
