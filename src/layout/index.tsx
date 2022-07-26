@@ -3,7 +3,7 @@ const HomeLayout = () => {
   return (
     <div>
       <div>Navbar</div>
-      <div>
+      <div className="h-screen">
         <Outlet />
       </div>
     </div>
