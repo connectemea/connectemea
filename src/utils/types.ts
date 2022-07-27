@@ -1,1 +1,1 @@
-export type addDelayFun = (setState: (arg1: boolean) => void) => void;
+export type addDelayFun = (setState: (arg1: boolean | string) => void, value?: boolean | string, delay?: number) => void;

@@ -1,5 +1,7 @@
 import { addDelayFun } from "./types";
 
-export const addDelay: addDelayFun = (setState) => {
-    setTimeout(() => setState(false), 4000);
+const addDelay: addDelayFun = (setState, value = false, delay = 400) => {
+    setTimeout(() => setState(value), delay);
 }
+
+export default addDelay;

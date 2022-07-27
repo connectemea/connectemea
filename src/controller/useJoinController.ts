@@ -1,10 +1,34 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { submitHandlerFun } from "./types";
 const useJoinController = () => {
-    const [name, setName] = useState<string>();
-    const [email, setEmail] = useState<string>();
-    const [phone, setPhone] = useState<string>();
-    const [department, setDepartment] = useState<string>();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [department, setDepartment] = useState("");
     const [joinYear, setJoinYear] = useState<string>(String(new Date().getFullYear()));
+    const [isError, setIsError] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    const submitHandler: submitHandlerFun = (e) => {
+        e.preventDefault();
+        console.log(name, email, phone, department, joinYear);
+    }
+
+    const checkIsFilled = useMemo(() => {
+        const isFilled = (name && email && phone && department && joinYear) ? true : false;
+        return isFilled
+    }, [name, email, phone, department, joinYear]);
+
+    const dialogToggler = {
+        error: {
+            get: isError,
+            set: () => { setIsError(false) }
+        },
+        success: {
+            get: isSuccess,
+            set: () => setIsSuccess(false)
+        }
+    }
 
     const Handlers = {
         name: {
@@ -28,6 +52,6 @@ const useJoinController = () => {
             setState: setJoinYear
         },
     }
-    return Handlers;
+    return { Handlers, submitHandler, checkIsFilled, dialogToggler };
 }
 export default useJoinController;

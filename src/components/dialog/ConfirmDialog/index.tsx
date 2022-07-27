@@ -4,8 +4,8 @@ import {
   ArrowCircleRightIcon,
 } from "@heroicons/react/outline";
 import DialogLayout from "../../../layout/dialogLayout";
-const ConfirmDialog = ({ title, description }: DialogProps) => {
-  return (
+const ConfirmDialog = ({ title, description, isOpen }: DialogProps) => {
+  return isOpen ? (
     <DialogLayout>
       <CheckCircleIcon className="h-20 w-20 text-green-500/75 my-2" />
       {title && (
@@ -20,6 +20,6 @@ const ConfirmDialog = ({ title, description }: DialogProps) => {
         Home <ArrowCircleRightIcon className="h-5 w-5 text-white ml-1" />
       </button>
     </DialogLayout>
-  );
+  ) : null;
 };
 export default ConfirmDialog;
