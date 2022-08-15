@@ -2,7 +2,7 @@ import { FormProps } from "./types";
 import Wrapper from "./wrapper";
 const FormLayout = ({ children, title, description }: FormProps) => {
   return (
-    <div className="p-5 pt-10 md:px-72 bg-[linear-gradient(45deg,#00dbde,#3aa9e5,#8865f0,#ef0cfd)] bg-[length:200%_200%] animate-gradient h-full ">
+    <div className="p-5 pt-[4.5rem] md:px-72 bg-[linear-gradient(45deg,#00dbde,#3aa9e5,#8865f0,#ef0cfd)] bg-[length:200%_200%] animate-gradient h-auto min-h-full">
       <h1
         className="text-4xl text-white font-semibold"
         style={{

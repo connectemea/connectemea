@@ -1,5 +1,6 @@
 import { DialogProps } from "../types";
-import { XCircleIcon, ArrowCircleRightIcon } from "@heroicons/react/outline";
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import CloseIcon from '@mui/icons-material/Close';
 import DialogLayout from "../../../layout/dialogLayout";
 const FailedDialog = ({
   title,
@@ -9,7 +10,7 @@ const FailedDialog = ({
 }: DialogProps) => {
   return isOpen ? (
     <DialogLayout>
-      <XCircleIcon className="h-20 w-20 text-red-500/75 my-2" />
+      <CloseIcon className="h-20 w-20 text-red-500/75 my-2" />
       {title && (
         <span className="text-lg text-black mb-3 font-medium">{title}</span>
       )}
@@ -22,7 +23,7 @@ const FailedDialog = ({
         className="rounded flex items-center justify-center p-2 px-4 bg-green-500 text-white shadow-lg shadowg-red-500/50 transition-transform hover:scale-[1.03]"
         onClick={onCloseHandler}
       >
-        Home <ArrowCircleRightIcon className="h-5 w-5 text-white ml-1" />
+        Home <ArrowRightAltIcon className="h-5 w-5 text-white ml-1" />
       </button>
     </DialogLayout>
   ) : null;

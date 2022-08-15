@@ -6,6 +6,6 @@ interface BaseProps {
 export interface WrapperProps extends BaseProps {
 }
 export interface FormProps extends BaseProps {
-    title: string;
-    description: string;
+    title: ReactNode;
+    description: ReactNode;
 }
