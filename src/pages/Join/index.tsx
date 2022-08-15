@@ -13,7 +13,7 @@ const Join = () => {
       title="Welcome to connect"
       description="We are thrilled to know that you want to join the connect mission. Let's get started🚀."
     >
-      <SeoHeader title="connect | join form" />
+      <SeoHeader title="Connect | Join form" />
       <ConfirmDialog
         title="Thanks for joining 😍"
         description="We will get back to you as soon as possible please do watch your whatsapp and mail."
