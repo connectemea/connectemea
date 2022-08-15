@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Home } from "./pages";
+import { Home, Join } from "./pages";
 import HomeLayout from "./layout/homeLayout";
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <Route path="/" element={<HomeLayout />}>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/form" element={<div>form</div>} />
+        <Route path="/join" element={<Join />} />
       </Route>
     </Routes>
   );

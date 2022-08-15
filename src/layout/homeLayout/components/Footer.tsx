@@ -34,9 +34,9 @@ const SocialLink = ({
   );
 };
 
-const Links = () => {
+const Footer = () => {
   return (
-    <ContentWrapper id="social">
+    <ContentWrapper id="social" classNames="pb-0">
       <div className="flex flex-col md:flex-row justify-between">
         <div className="flex flex-col">
           <h2 className="text-2xl font-bold mb-4 text-black">Connect</h2>
@@ -52,8 +52,11 @@ const Links = () => {
           ))}
         </div>
       </div>
+      <div className="text-black opacity-80 font-light text-base grid place-items-center pb-4 pt-6">
+        Crafted with 💌 ©CONNECT.
+      </div>
     </ContentWrapper>
   );
 };
 
-export default Links;
+export default Footer;

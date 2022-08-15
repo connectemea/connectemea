@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 import useNavbarController from "./useNavbarController";
 import { Logo } from "../../assets";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -17,7 +18,7 @@ const HomeLayout = () => {
         <div className="flex flex-col md:flex-row justify-between md:relative w-full max-w-[1200px] m-0 mx-auto px-4 md:items-center">
           <img src={Logo} alt="connectLogo" className="h-[35px] my-4 w-fit" />
           <Navbar hide={true} />
-          {isOpen && <Navbar />}
+          {isOpen && <Navbar onClickHandler={navToggle}/>}
           <div
             className="md:hidden absolute top-[20px] right-[28px]"
             onClick={navToggle}
@@ -32,9 +33,7 @@ const HomeLayout = () => {
       </header>
       <div className="h-full w-full">
         <Outlet />
-        <div className="text-black opacity-80 font-light text-base grid place-items-center pb-4">
-          Crafted with 💌 ©CONNECT.
-        </div>
+        <Footer/>
       </div>
     </div>
   );
