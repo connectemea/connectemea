@@ -1,4 +1,4 @@
-import { Title, Content,ContentWrapper } from "../../../components/common";
+import { Title, Content,ContentWrapper } from "../../../common";
 
 interface WrapperProps {
   title: string;

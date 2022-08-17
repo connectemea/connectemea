@@ -1,6 +1,6 @@
 import { textProps } from "../types";
 import useTextController from "./useTextController";
-import { capitalizeFirstLetter } from "../../../utils";
+import { capitalizeFirstLetter } from "../../../../utils";
 const Text = ({
   type = "text",
   label,

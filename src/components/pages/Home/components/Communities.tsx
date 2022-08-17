@@ -1,5 +1,5 @@
-import { Title, Content, ContentWrapper } from "../../../components/common";
-import { Tinkerhub, Creative } from "../../../assets";
+import { Title, Content, ContentWrapper } from "../../../common";
+import { Tinkerhub, Creative } from "../../../../assets";
 
 interface CommunityCardProps {
   title: string;

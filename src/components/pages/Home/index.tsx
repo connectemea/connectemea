@@ -1,4 +1,4 @@
-import SeoHeader from "../../components/SeoHeader";
+import SeoHeader from "../../SeoHeader";
 import { About, Communities, JoinUs, Welcome } from "./components";
 const Home = () => {
   return (

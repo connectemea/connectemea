@@ -1,6 +1,6 @@
 import { selectProps } from "../types";
 import useSelectController from "./useSelectController";
-import { capitalizeFirstLetter } from "../../../utils";
+import { capitalizeFirstLetter } from "../../../../utils";
 
 const Select = ({ label, options, value, setValue }: selectProps) => {
   const [changeHandler] = useSelectController(setValue);

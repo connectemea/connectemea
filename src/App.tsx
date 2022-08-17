@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Home, Join } from "./pages";
-import HomeLayout from "./layout/homeLayout";
+import { Home, Join } from "./components/pages";
+import HomeLayout from "./components/layout/homeLayout";
 function App() {
   return (
     <Routes>

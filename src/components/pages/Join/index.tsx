@@ -1,10 +1,10 @@
 import FormLayout from "../../layout/formLayout";
-import { Text, Select } from "../../components/inputs";
-import useJoinController from "../../controller/useJoinController";
-import departmentList from "../../const/departmentList";
+import { Text, Select } from "../../common/inputs";
+import useJoinController from "../../../controller/useJoinController";
+import departmentList from "../../../const/departmentList";
 import InputWrapper from "./InputWrapper";
-import { ConfirmDialog, FailedDialog } from "../../components/dialog";
-import SeoHeader from "../../components/SeoHeader";
+import { ConfirmDialog, FailedDialog } from "../../common/dialog";
+import SeoHeader from "../../SeoHeader";
 const Join = () => {
   const { Handlers, submitHandler, checkIsFilled, dialogToggler } =
     useJoinController();

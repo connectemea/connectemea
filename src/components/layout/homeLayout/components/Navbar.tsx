@@ -1,6 +1,6 @@
 import { NavbarProps } from "../types";
 import NavLink from "./NavLink";
-import navLinks from "../../../const/navLinks";
+import navLinks from "../../../../const/navLinks";
 
 const Navbar = ({ hide = false,onClickHandler }: NavbarProps) => {
   return (

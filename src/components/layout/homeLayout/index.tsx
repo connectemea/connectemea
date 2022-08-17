@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"
 import useNavbarController from "./useNavbarController";
-import { Logo } from "../../assets";
+import { Logo } from "../../../assets";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 

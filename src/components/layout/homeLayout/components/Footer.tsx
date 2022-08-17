@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import { ContentWrapper } from "../../../components/common";
-import socialLink from "../../../const/socialLinks";
-import navLinks from "../../../const/navLinks";
+import { ContentWrapper } from "../../../common";
+import socialLink from "../../../../const/socialLinks";
+import navLinks from "../../../../const/navLinks";
 import { HashLink } from "react-router-hash-link";
 
 const NavLink = ({ name, href }: { name: string; href: string }) => {
