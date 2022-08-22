@@ -1,4 +1,4 @@
-import { ActionBtn, ContentWrapper, Title } from "../../../common";
+import { ActionBtn, ContentWrapper, Title } from "../../../components/common";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const JoinUs = () => {
   return (

@@ -1,9 +1,9 @@
-import SeoHeader from "../../SeoHeader";
+import SeoHeader from "../../components/common/SeoHeader";
 import { About, Communities, JoinUs, Welcome } from "./components";
 const Home = () => {
   return (
     <div>
-      <SeoHeader title="connect | Home" />
+      <SeoHeader title="connectemea" />
       <Welcome />
       <About />
       <Communities />

@@ -1,4 +1,4 @@
-import { ContentWrapper } from "../../../common";
+import { ContentWrapper } from "../../../components/common";
 
 const Home = () => {
   return (

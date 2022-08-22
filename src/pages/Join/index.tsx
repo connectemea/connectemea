@@ -1,19 +1,19 @@
-import FormLayout from "../../layout/formLayout";
-import { Text, Select } from "../../common/inputs";
-import useJoinController from "../../../controller/useJoinController";
-import departmentList from "../../../const/departmentList";
+import FormLayout from "../../components/layout/formLayout";
+import { Text, Select } from "../../components/common/inputs";
+import useJoin from "./useJoin";
+import departmentList from "../../const/departmentList";
 import InputWrapper from "./InputWrapper";
-import { ConfirmDialog, FailedDialog } from "../../common/dialog";
-import SeoHeader from "../../SeoHeader";
+import { ConfirmDialog, FailedDialog } from "../../components/common/dialog";
+import SeoHeader from "../../components/common/SeoHeader";
 const Join = () => {
   const { Handlers, submitHandler, checkIsFilled, dialogToggler } =
-    useJoinController();
+    useJoin();
   return (
     <FormLayout
       title="Welcome to connect"
-      description="We are thrilled to know that you want to join the connect mission. Let's get started🚀."
+      description="We are thrilled to know that you want to join the connect mission, Let's get started 🚀."
     >
-      <SeoHeader title="Connect | Join form" />
+      <SeoHeader title="connectemea - join form" />
       <ConfirmDialog
         title="Thanks for joining 😍"
         description="We will get back to you as soon as possible please do watch your whatsapp and mail."
