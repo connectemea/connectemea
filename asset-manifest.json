@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/connectemea/static/css/main.3a54b2d6.css",
-    "main.js": "/connectemea/static/js/main.015f8b11.js",
+    "main.js": "/connectemea/static/js/main.f43d3309.js",
     "static/media/logo.svg": "/connectemea/static/media/logo.2a091ab3b0001556b361b996d6f684ff.svg",
     "index.html": "/connectemea/index.html",
     "main.3a54b2d6.css.map": "/connectemea/static/css/main.3a54b2d6.css.map",
-    "main.015f8b11.js.map": "/connectemea/static/js/main.015f8b11.js.map"
+    "main.f43d3309.js.map": "/connectemea/static/js/main.f43d3309.js.map"
   },
   "entrypoints": [
     "static/css/main.3a54b2d6.css",
-    "static/js/main.015f8b11.js"
+    "static/js/main.f43d3309.js"
   ]
 }
