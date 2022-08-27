@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { HashLink } from "react-router-hash-link";
 
 interface ActionBtnProps {
   children: ReactNode;
@@ -7,6 +8,7 @@ interface ActionBtnProps {
   fontSize?: string;
   fontWeight?: string;
   classNames?: string;
+  link?: string;
 }
 const ActionBtn = ({
   children,
@@ -15,14 +17,15 @@ const ActionBtn = ({
   fontSize = "text-2xl",
   fontWeight = "font-bold",
   classNames,
+  link = "/"
 }: ActionBtnProps) => {
   return (
-    <a
-      href="/home#join"
+    <HashLink
+      to={link}
       className={`${bgColor} ${fontSize} ${fontWeight} ${fgColor} ${classNames} text-white py-3 px-8 rounded-[99999px] cursor-pointer uppercase transition-transform hover:scale-110`}
     >
       {children}
-    </a>
+    </HashLink>
   );
 };
 export default ActionBtn;

@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-black opacity-80 font-light text-base grid place-items-center pb-4 pt-6">
-        Crafted with 💌 ©CONNECT.
+        Crafted with 💌 connectemea.
       </div>
     </ContentWrapper>
   );

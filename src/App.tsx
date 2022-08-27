@@ -1,15 +1,18 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Home, Join } from "./components/pages";
+import { Home, Join } from "./pages";
 import HomeLayout from "./components/layout/homeLayout";
+import { LoadingProvider } from "./context/loadingContext";
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomeLayout />}>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/join" element={<Join />} />
-      </Route>
-    </Routes>
+    <LoadingProvider>
+      <Routes>
+        <Route path="/" element={<HomeLayout />}>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/join" element={<Join />} />
+        </Route>
+      </Routes>
+    </LoadingProvider>
   );
 }
 

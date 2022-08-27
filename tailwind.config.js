@@ -10,8 +10,18 @@ module.exports = {
       },
       animation: {
         gradient: "gradient 3s ease-in-out infinite",
+        smoothSpin:
+          "smoothSpin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite",
       },
       keyframes: {
+        smoothSpin: {
+          "0%, 15%": {
+            transform: "rotate(0)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
         gradient: {
           "0%, 100%": {
             backgroundPosition: "0 50%",
@@ -21,7 +31,7 @@ module.exports = {
           },
         },
       },
-    
+
       colors: {
         "trans-white": "rgba(255, 255, 255, 0.75)",
       },

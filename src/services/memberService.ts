@@ -9,6 +9,12 @@ export const getMember = (id: string) => {
 }
 export const createMember = (data: { name: string }) => {
     const path = "";
-    return BackendService.post(path, data);
-
+    const dataObj = {
+        records:[
+            {
+                fields:data
+            }
+        ]
+    }
+    return BackendService.post(path, dataObj);
 }

@@ -1,6 +1,14 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useContext } from "react";
 import { submitHandlerFun } from "./types";
-const useJoinController = () => {
+import { createMember } from "../../services/memberService";
+import { addDelay } from "../../utils";
+import { useNavigate } from "react-router-dom";
+import loadingContext from "../../context/loadingContext";
+import { v4 as uuidv4 } from 'uuid';
+
+const useJoin = () => {
+    const navigate = useNavigate();
+    const { loaderToggler } = useContext(loadingContext);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -9,9 +17,29 @@ const useJoinController = () => {
     const [isError, setIsError] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
-    const submitHandler: submitHandlerFun = (e) => {
+    const redirectToHome = () => { navigate("/") }
+
+    const submitHandler: submitHandlerFun = async (e) => {
         e.preventDefault();
-        console.log(name, email, phone, department, joinYear);
+        loaderToggler(true);
+        try {
+            const data = {
+                id: uuidv4(),
+                email,
+                name,
+                phoneNo: phone,
+                department,
+                joinYear
+            };
+            await createMember(data);
+            addDelay(setIsSuccess, redirectToHome);
+
+        } catch (err: any) {
+            addDelay(setIsError, redirectToHome);
+            console.error(err.message);
+        }
+        loaderToggler(false);
+
     }
 
     const checkIsFilled = useMemo(() => {
@@ -22,11 +50,11 @@ const useJoinController = () => {
     const dialogToggler = {
         error: {
             get: isError,
-            set: () => { setIsError(false) }
+            set: redirectToHome
         },
         success: {
             get: isSuccess,
-            set: () => setIsSuccess(false)
+            set: redirectToHome
         }
     }
 
@@ -54,4 +82,4 @@ const useJoinController = () => {
     }
     return { Handlers, submitHandler, checkIsFilled, dialogToggler };
 }
-export default useJoinController;
+export default useJoin;

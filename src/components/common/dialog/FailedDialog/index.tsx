@@ -1,6 +1,5 @@
 import { DialogProps } from "../types";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import CloseIcon from '@mui/icons-material/Close';
 import DialogLayout from "../../../layout/dialogLayout";
 const FailedDialog = ({
   title,
@@ -10,7 +9,6 @@ const FailedDialog = ({
 }: DialogProps) => {
   return isOpen ? (
     <DialogLayout>
-      <CloseIcon className="h-20 w-20 text-red-500/75 my-2" />
       {title && (
         <span className="text-lg text-black mb-3 font-medium">{title}</span>
       )}
