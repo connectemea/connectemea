@@ -9,7 +9,7 @@ const navLinks = [
   },
   {
     label: "Join",
-    href:"/join"
+    href:"/join#top"
   },
 ];
 

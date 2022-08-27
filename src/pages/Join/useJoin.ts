@@ -4,9 +4,11 @@ import { createMember } from "../../services/memberService";
 import { addDelay } from "../../utils";
 import { useNavigate } from "react-router-dom";
 import loadingContext from "../../context/loadingContext";
+import { v4 as uuidv4 } from 'uuid';
+
 const useJoin = () => {
     const navigate = useNavigate();
-    const { loaderToggler } = useContext(loadingContext)
+    const { loaderToggler } = useContext(loadingContext);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -22,6 +24,7 @@ const useJoin = () => {
         loaderToggler(true);
         try {
             const data = {
+                id: uuidv4(),
                 email,
                 name,
                 phoneNo: phone,

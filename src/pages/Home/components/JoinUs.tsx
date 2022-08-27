@@ -16,7 +16,7 @@ const JoinUs = () => {
         </Title>
       </header>
       <section className="flex items-center justify-center">
-        <ActionBtn>
+        <ActionBtn link="/join#top">
           Join now <ArrowRightAltIcon />
         </ActionBtn>
       </section>
