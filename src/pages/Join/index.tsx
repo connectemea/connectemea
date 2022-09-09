@@ -13,7 +13,7 @@ const Join = () => {
       title="Welcome to connect"
       description="We are thrilled to know that you want to join the connect mission, Let's get started 🚀."
     >
-      <SeoHeader title="connectemea - join form" />
+      <SeoHeader title="Join form" />
       <ConfirmDialog
         title="Thanks for joining 😍"
         description="We will get back to you as soon as possible please do watch your whatsapp and mail."
@@ -65,9 +65,8 @@ const Join = () => {
       </InputWrapper>
       <InputWrapper>
         <button
-          className={`${
-            checkIsFilled ? "hover:bg-blue-700" : "opacity-60"
-          } bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-3 md:ml-auto`}
+          className={`${checkIsFilled ? "hover:bg-blue-700" : "opacity-60"
+            } bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-3 md:ml-auto`}
           type="button"
           onClick={checkIsFilled ? submitHandler : undefined}
         >

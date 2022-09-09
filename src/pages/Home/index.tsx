@@ -3,7 +3,7 @@ import { About, Communities, JoinUs, Welcome } from "./components";
 const Home = () => {
   return (
     <div>
-      <SeoHeader title="connectemea" />
+      <SeoHeader />
       <Welcome />
       <About />
       <Communities />

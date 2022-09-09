@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
 export interface SeoHeaderProps {
-    title: string;
+    title?: string;
     children?: ReactNode;
 }

@@ -18,7 +18,7 @@ const HomeLayout = () => {
           }`}
       >
         <div className="flex flex-col md:flex-row justify-between md:relative w-full max-w-[1200px] m-0 mx-auto px-4 md:items-center">
-          <img src={Logo} alt="connectLogo" className="h-[35px] my-4 w-fit" />
+          <img src={Logo} alt="connectemea" className="h-[35px] my-4 w-fit" />
           <Navbar hide={true} />
           {isOpen && <Navbar onClickHandler={navToggle} />}
           <div

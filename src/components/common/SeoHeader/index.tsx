@@ -4,7 +4,7 @@ import { SeoHeaderProps } from "./types";
 const SeoHeader = ({ title, children }: SeoHeaderProps) => {
   return (
     <Helmet>
-      <title>{title}</title>
+      <title>{`${title} ${title ? "-" : null} connectemea`}</title>
       {children}
     </Helmet>
   );
