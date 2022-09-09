@@ -2,7 +2,7 @@
   "name": "connectemea",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://connectemea.github.io/connectemea",
+  "homepage": "https://connectemea.in",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
