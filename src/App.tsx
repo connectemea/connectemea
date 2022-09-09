@@ -7,11 +7,11 @@ function App() {
     <LoadingProvider>
       <Routes>
         <Route path="/" element={<HomeLayout />}>
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/join" element={<Join />} />
         </Route>
-        <Route path="*" element={<Navigate to="/home" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </LoadingProvider>
   );
