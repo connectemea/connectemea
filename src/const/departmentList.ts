@@ -1,18 +1,6 @@
 const department =
     [
         {
-            value: "BSc CS"
-        },
-        {
-            value: "BSc Micro"
-        },
-        {
-            value: "BSc Biotech"
-        },
-        {
-            value: "BSc Biochem"
-        },
-        {
             value: "BA Eco"
         },
         {
@@ -22,13 +10,28 @@ const department =
             value: "BA WAS"
         },
         {
+            value: "BBA"
+        },
+        {
+            value: "BSc Biotech"
+        },
+        {
+            value: "BSc Biochem"
+        },
+        {
+            value: "BSc CS"
+        },
+        {
+            value: "BSc Maths and Physics"
+        },
+        {
+            value: "BSc Micro"
+        },
+        {
             value: "B.Com CA"
         },
         {
             value: "B.Com Co-op"
-        },
-        {
-            value: "BBA"
         },
         {
             value: "BVoc Logi"
@@ -37,7 +40,19 @@ const department =
             value: "BVoc Prof"
         },
         {
-            value: "BSc Maths and Physics"
-        }
+            value: "MA Eco"
+        },
+        {
+            value: "MA Eng"
+        },
+        {
+            value: "MA History"
+        },
+        {
+            value: "MSc Micro"
+        },
+        {
+            value: "M.com"
+        },
     ]
 export default department;
