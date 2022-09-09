@@ -11,6 +11,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/join" element={<Join />} />
         </Route>
+        <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </LoadingProvider>
   );
