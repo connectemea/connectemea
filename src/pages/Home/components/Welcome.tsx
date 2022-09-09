@@ -4,7 +4,7 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const Home = () => {
   return (
-    <ContentWrapper>
+    <ContentWrapper id="home">
       <div className="w-full h-screen flex flex-col items-left md:items-center justify-center">
         <Title fontSize="text-6xl md:text-8xl" classNames="mb-10"><Title
           fontSize="text-6xl md:text-8xl"
