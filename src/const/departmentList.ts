@@ -34,6 +34,9 @@ const department =
             value: "B.Com Co-op"
         },
         {
+            value:"BVoc Islamic finance"
+        },
+        {
             value: "BVoc Logi"
         },
         {
