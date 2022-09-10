@@ -1,6 +1,6 @@
 import { textProps } from "../types";
 import useTextController from "./useTextController";
-import { capitalizeFirstLetter } from "../../../../utils";
+import { capitalizeFirstLetter, inputLenLimiter } from "../../../../utils";
 const Text = ({
   type = "text",
   label,
@@ -28,6 +28,7 @@ const Text = ({
         placeholder={placeHolder || `Enter ${label}`}
         value={value}
         onChange={changeHandler}
+        onKeyUp={limit ? inputLenLimiter(limit) : undefined}
         maxLength={limit || undefined}
       />
       {isError && (

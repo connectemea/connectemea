@@ -9,7 +9,7 @@ interface inputBaseProps {
 }
 export interface textProps extends inputBaseProps {
     placeHolder?: string;
-    type?: "text" | "tel" | "year" | "email";
+    type?: "text" | "tel" | "year" | "email" | "number";
     limit?: number;
 }
 export interface selectProps extends inputBaseProps {

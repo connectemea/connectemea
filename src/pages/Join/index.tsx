@@ -49,10 +49,11 @@ const Join = () => {
         />
 
         <Text
-          type="tel"
+          type="number"
           label="mobile no"
           value={Handlers.phone.state}
           setValue={Handlers.phone.setState}
+          limit={10}
         />
       </InputWrapper>
       <InputWrapper>
