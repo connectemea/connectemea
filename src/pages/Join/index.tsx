@@ -70,6 +70,7 @@ const Join = () => {
             } bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-3 md:ml-auto`}
           type="button"
           onClick={checkIsFilled ? submitHandler : undefined}
+          title={!checkIsFilled ? "Enter each field" : undefined}
         >
           submit 💌
         </button>
