@@ -1,6 +1,6 @@
 import BackendService from "../lib/BackendService";
 export const getMembers = () => {
-    const path = "?maxRecords=3&view=Grid%20view";
+    const path = "";
     return BackendService.get(path);
 }
 export const getMember = (id: string) => {

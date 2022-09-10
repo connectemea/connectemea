@@ -1,6 +1,6 @@
 import { useState, useMemo, useContext } from "react";
-import { submitHandlerFun } from "./types";
-import { createMember } from "../../services/memberService";
+import { submitHandlerFun, MemberType } from "./types";
+import { createMember, getMembers } from "../../services/memberService";
 import { addDelay } from "../../utils";
 import { useNavigate } from "react-router-dom";
 import loadingContext from "../../context/loadingContext";
@@ -19,6 +19,15 @@ const useJoin = () => {
 
     const redirectToHome = () => { navigate("/") }
 
+    const checkUserExits = async (phone: string, email: string) => {
+        try {
+            const members: MemberType = await getMembers();
+            return await members.records.find((record) => record.fields.phoneNo === phone || record.fields.email === email);
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
     const submitHandler: submitHandlerFun = async (e) => {
         e.preventDefault();
         loaderToggler(true);
@@ -31,7 +40,10 @@ const useJoin = () => {
                 department,
                 joinYear
             };
-            await createMember(data);
+            const user = await checkUserExits(phone, email);
+            if (!user) {
+                await createMember(data);
+            }
             addDelay(setIsSuccess, redirectToHome);
 
         } catch (err: any) {

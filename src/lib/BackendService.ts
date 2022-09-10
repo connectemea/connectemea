@@ -6,7 +6,7 @@ const get: PromiseFunction = async (path, headers = {}, params = {}) => {
     const url = `${backendUrl.airtableBaseUrl}${path}`;
     const response = await axios.get(url, _generateParams(headers, params));
 
-    return response.data.data;
+    return response.data;
 };
 
 const post: PromiseFunction = async (path, data = {}, headers = {}, params = {}) => {
