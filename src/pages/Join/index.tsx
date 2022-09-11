@@ -42,10 +42,11 @@ const Join = () => {
       </InputWrapper>
       <InputWrapper>
         <Text
-          type="year"
+          type="number"
           label="join year"
           value={Handlers.join.state}
           setValue={Handlers.join.setState}
+          limit={4}
         />
 
         <Text
