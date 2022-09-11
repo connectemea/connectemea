@@ -42,7 +42,7 @@ const Communities = () => {
       />
       <CommunityCard
         title="Creative Club"
-        body="Creative club is founded on the idea of guiding and inspiring students to build creative careers by instilling a feeling of passion and interest for creative and digital skills.The motive of the creative club is to simulate interest in."
+        body="Creative club is founded on the idea of guiding and inspiring students to build creative careers by instilling a feeling of passion and interest for creative and digital skills."
         image={Creative}
       />
     </ContentWrapper>

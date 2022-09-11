@@ -39,13 +39,13 @@ const About = () => {
           leadership quality, eloquence and entrepreneurship skills, encouraging
           peer-to-peer learning and provides internship programs. By organizing
           talks, fests, job fairs, hackathons, workshops and webinars, Connect
-          aims at creating a focussed platform to hasten the learning process,
+          aims at creating a focused platform to hasten the learning process,
           thereby creating an incentive for student engagement in the
           exploration of the world that's rapidly evolving."
       />
       <Wrapper
         title="Our Vision"
-        content="We paint a larger picture of the student community to create a network with clusters of their area of interests and thus creating a potent workforce capable of unlocking the vast reservoir of untapped potential. By improving specific learning outcomes, it essentially places people first by empowering these people with technical and creative skills to make sustainable choices and multi-dimensional solutions that the complex new world needs."
+        content="We paint a larger picture of the student community to create a network with clusters of their area of interests and thus creating a potent workforce capable of unlocking the vast reservoir of untapped potential. By improving specific learning outcomes, it essentially places people first by empowering them with technical and creative skills to make sustainable choices and multi-dimensional solutions that the complex new world needs."
       />
     </ContentWrapper>
   );
