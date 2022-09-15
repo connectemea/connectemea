@@ -13,7 +13,7 @@ const useJoin = () => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [department, setDepartment] = useState("");
-    const [joinYear, setJoinYear] = useState<string>(String(new Date().getFullYear()));
+    const [joinYear, setJoinYear] = useState<string>("");
     const [isError, setIsError] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
