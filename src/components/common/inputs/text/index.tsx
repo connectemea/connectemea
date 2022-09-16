@@ -10,6 +10,7 @@ const Text = ({
   isError,
   errorMsg,
   limit,
+  helper,
 }: textProps) => {
   const [changeHandler] = useTextController(setValue);
 
@@ -35,6 +36,9 @@ const Text = ({
         <p className="text-red-500 text-xs italic">
           {errorMsg || `invalid ${label}`}
         </p>
+      )}
+      {helper && (
+        <p className="mt-2 text-xs text-gray-400">{helper}</p>
       )}
     </div>
   );

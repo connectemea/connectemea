@@ -44,6 +44,8 @@ const Join = () => {
         <Text
           type="number"
           label="join year"
+          placeHolder="Enter college joining year"
+          helper="2020 for 3rd years"
           value={Handlers.join.state}
           setValue={Handlers.join.setState}
           limit={4}
