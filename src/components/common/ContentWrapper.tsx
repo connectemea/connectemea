@@ -7,7 +7,7 @@ interface ContentWrapperProps {
 }
 const ContentWrapper = ({ children,id,classNames }: ContentWrapperProps) => {
   return (
-    <section id={id} className={`w-full max-w-[1200px] m-0 mx-auto px-6 py-20 ${classNames}`}>
+    <section id={id} className={`w-full max-w-[1200px] m-0 mx-auto px-6 py-8 ${classNames}`}>
       {children}
     </section>
   );

@@ -6,4 +6,5 @@ export interface NavLinkProps {
 export interface NavbarProps {
   hide?: boolean;
   onClickHandler?:()=>void;
+  isScrolled?:boolean;
 }

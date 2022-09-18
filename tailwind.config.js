@@ -38,6 +38,7 @@ module.exports = {
       backgroundImage: {
         "red-grad":
           "radial-gradient( ellipse farthest-corner at top left, #ff8c37, #ec3750 )",
+        "muted-grad": "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5))",
       },
     },
   },
