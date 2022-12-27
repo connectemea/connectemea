@@ -7,11 +7,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Loader from "../../common/loader";
 
+
 const HomeLayout = () => {
   const { isOpen, navToggle, isScrolled } = useNavbarController();
   return (
     <div className="w-screen h-screen">
-      <Loader />
+      <Loader/>
       <div id="top" />
       <header
         className={`fixed top-0 left-0 w-full md:my-0 flex flex-col z-20 md:h-auto ${isScrolled || isOpen ? "bg-trans-white backdrop-blur-[20px] backdrop-saturate-[180%] border-b-[1px] border-[rgba(48, 48, 48, 0.125)] border-solid" : "bg-transparent"} ${isOpen ? "h-screen" : "h-auto"

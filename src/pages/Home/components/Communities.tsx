@@ -1,5 +1,5 @@
 import { Title, Content, ContentWrapper } from "../../../components/common";
-import { Tinkerhub, Creative } from "../../../assets";
+import { Tinkerhub, SheHike, Iedc } from "../../../assets";
 
 interface CommunityCardProps {
   title: string;
@@ -8,11 +8,11 @@ interface CommunityCardProps {
 }
 const CommunityCard = ({ title, body, image }: CommunityCardProps) => {
   return (
-    <div className="mb-8 p-6 md:p-12 flex bg-[#F3F7F9] flex-col md:flex-row rounded-xl">
+    <div className="mb-8 p-6 md:p-12 flex bg-[#e7f7ff] flex-col md:flex-row rounded-xl">
       <img
         alt={title}
         src={image}
-        className="p-3 w-[70px] md:w-[95px] h-[70px] md:h-[95px] rounded-[20px] bg-[#B3C3E2] mb-3 md:mr-10"
+        className="p-3 w-[70px] md:w-[95px] h-[70px] md:h-[95px] rounded-[20px] bg-[#ffffff] mb-3 md:mr-10"
       />
       <section>
         <Title fontSize="text-2xl md:text-4xl" fontWeight="font-medium" classNames="px-0">
@@ -41,9 +41,15 @@ const Communities = () => {
         image={Tinkerhub}
       />
       <CommunityCard
-        title="Creative Club"
-        body="Creative club is founded on the idea of guiding and inspiring students to build creative careers by instilling a feeling of passion and interest for creative and digital skills."
-        image={Creative}
+        title="SheHike"
+        body="‘SheHike’ is a women's wing under CONNECT EMEA which is open to all the girl students in the college.The purpose of this initiative is to empower women with relevant knowledge
+        and skills, thereby encouraging peer-to-peer learning among them."
+        image={SheHike}
+      />
+      <CommunityCard
+        title="IEDC EMEA"
+        body="The Innovation and Entrepreneurship Development Centres (IEDC) are platforms set up in Engineering, Management, Arts & Science Colleges and Polytechnics with an aim to provide students an opportunity to experiment and innovate."
+        image={Iedc}
       />
     </ContentWrapper>
   );

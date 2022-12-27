@@ -12,7 +12,7 @@ const useNavbarController = () => {
   });
 
   const getScrollDetails = () => {
-    console.log("called", window.scrollY);
+    // console.log("called", window.scrollY);
     const top = window.scrollY;
     if (top > 100) setIsScrolled(true);
     else setIsScrolled(false);
