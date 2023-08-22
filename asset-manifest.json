@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.50edce2e.css",
-    "main.js": "/static/js/main.126215f8.js",
+    "main.css": "/static/css/main.51c88bb6.css",
+    "main.js": "/static/js/main.b0f86632.js",
     "static/media/coreImg.jpeg": "/static/media/coreImg.d96eaf3c458c2c95339e.jpeg",
     "static/media/iedcLogo.png": "/static/media/iedcLogo.b69aea83abfc1c0f9c73.png",
     "static/media/SheHikeLogo.png": "/static/media/SheHikeLogo.dccd901859bc399d3a77.png",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.2a091ab3b0001556b361b996d6f684ff.svg",
-    "main.50edce2e.css.map": "/static/css/main.50edce2e.css.map",
-    "main.126215f8.js.map": "/static/js/main.126215f8.js.map"
+    "main.51c88bb6.css.map": "/static/css/main.51c88bb6.css.map",
+    "main.b0f86632.js.map": "/static/js/main.b0f86632.js.map"
   },
   "entrypoints": [
-    "static/css/main.50edce2e.css",
-    "static/js/main.126215f8.js"
+    "static/css/main.51c88bb6.css",
+    "static/js/main.b0f86632.js"
   ]
 }
