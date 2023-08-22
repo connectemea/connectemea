@@ -1,5 +1,4 @@
 import { ActionBtn, ContentWrapper, Title } from "../../../components/common";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const JoinUs = () => {
   return (
     <ContentWrapper id="join">
@@ -17,7 +16,7 @@ const JoinUs = () => {
       </header>
       <section className="flex items-center justify-center">
         <ActionBtn link="/join#top">
-          Join now <ArrowRightAltIcon />
+          Join now
         </ActionBtn>
       </section>
     </ContentWrapper>

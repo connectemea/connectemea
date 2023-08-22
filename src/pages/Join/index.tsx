@@ -45,7 +45,6 @@ const Join = () => {
           type="number"
           label="join year"
           placeHolder="Enter college joining year"
-          helper="2020 for 3rd years"
           value={Handlers.join.state}
           setValue={Handlers.join.setState}
           limit={4}
@@ -70,12 +69,12 @@ const Join = () => {
       <InputWrapper>
         <button
           className={`${checkIsFilled ? "hover:bg-blue-700" : "opacity-60"
-            } bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-3 md:ml-auto`}
+            } bg-blue-500  text-white font-bold py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline mx-3 md:ml-auto`}
           type="button"
           onClick={checkIsFilled ? submitHandler : undefined}
           title={!checkIsFilled ? "Enter each field" : undefined}
         >
-          submit 💌
+          SUBMIT
         </button>
       </InputWrapper>
     </FormLayout>

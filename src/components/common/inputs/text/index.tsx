@@ -17,13 +17,13 @@ const Text = ({
   return (
     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
       <label
-        className="block text-gray-700 text-sm font-bold mb-2"
+        className="block text-gray-700 text-sm font-bold mb-2 ml-4"
         htmlFor="text-input"
       >
         {capitalizeFirstLetter(label)}
       </label>
       <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-blue-500/50 focus:border-blue-500/50"
+        className="shadow appearance-none border rounded-3xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-blue-500/50 focus:border-blue-500/50"
         id="text-input"
         type={type}
         placeholder={placeHolder || `Enter ${label}`}
@@ -38,7 +38,7 @@ const Text = ({
         </p>
       )}
       {helper && (
-        <p className="mt-2 text-xs text-gray-400">{helper}</p>
+        <p className="mt-2 ml-4 text-xs text-gray-400">{helper}</p>
       )}
     </div>
   );

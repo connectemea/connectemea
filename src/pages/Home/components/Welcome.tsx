@@ -1,5 +1,4 @@
 import { ContentWrapper, Title, ActionBtn } from "../../../components/common";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { Core } from "../../../assets";
 
 
@@ -27,7 +26,7 @@ const Home = () => {
             >Passion.</Title>
           </Title>
           <ActionBtn link="/join#top" classNames="w-fit z-10">
-            Join now <ArrowRightAltIcon />
+            Join now
           </ActionBtn>
         </div>
       </ContentWrapper>
