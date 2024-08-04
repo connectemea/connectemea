@@ -7,10 +7,10 @@ const navLinks = [
     label: "About",
     href:"/home#about"
   },
-  {
-    label: "Join",
-    href:"/join#top"
-  },
+  // {
+  //   label: "Join",
+  //   href:"/join#top"
+  // },
 ];
 
 export default navLinks;
