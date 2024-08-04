@@ -1,5 +1,5 @@
 import { Title, Content, ContentWrapper } from "../../../components/common";
-import { Tinkerhub, SheHike, Iedc } from "../../../assets";
+import { Tinkerhub, SheHike } from "../../../assets";
 
 interface CommunityCardProps {
   title: string;
@@ -45,11 +45,6 @@ const Communities = () => {
         body="‘SheHike’ is a women's wing under CONNECT EMEA which is open to all the girl students in the college.The purpose of this initiative is to empower women with relevant knowledge
         and skills, thereby encouraging peer-to-peer learning among them."
         image={SheHike}
-      />
-      <CommunityCard
-        title="IEDC EMEA"
-        body="The Innovation and Entrepreneurship Development Centres (IEDC) are platforms set up in Engineering, Management, Arts & Science Colleges and Polytechnics with an aim to provide students an opportunity to experiment and innovate."
-        image={Iedc}
       />
     </ContentWrapper>
   );
