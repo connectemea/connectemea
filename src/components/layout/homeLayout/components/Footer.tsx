@@ -40,8 +40,8 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between">
         <div className="flex flex-col">
           <h2 className="text-2xl font-bold mb-4 text-black">Connect</h2>
-          {navLinks.map(({ label, href }) => (
-            <NavLink name={label} href={href} />
+          {navLinks.map(({ label, href }, index) => (
+            <NavLink name={label} href={href} key={index}/>
           ))}
         </div>
         <div className="flex justify-around">

@@ -9,8 +9,9 @@ const Navbar = ({ hide = false, onClickHandler, isScrolled = true }: NavbarProps
       className={`${hide ? "hidden md:flex" : "flex"
         } flex-col md:flex-row md:flex-1 justify-center w-full mt-3 md:mt-0`}
     >
-      {navLinks.map(({ label, href }) => (
+      {navLinks.map(({ label, href },index) => (
         <HashLink
+          key={index}
           smooth
           to={href}
           onClick={onClickHandler}
