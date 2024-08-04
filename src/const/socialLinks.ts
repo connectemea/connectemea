@@ -12,7 +12,7 @@ const socialLink = [
   {
     label: "linkedin",
     Icon: LinkedInIcon,
-    href:"https://www.linkedin.com/in/connectemea/"
+    href:"https://www.linkedin.com/company/connectemea/"
   },
   {
     label: "github",
