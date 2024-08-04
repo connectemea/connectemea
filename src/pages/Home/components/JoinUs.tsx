@@ -1,4 +1,9 @@
-import { ActionBtn, ContentWrapper, Title } from "../../../components/common";
+import {
+  ActionBtn,
+  ContentWrapper,
+  Title,
+  WhatsappBtn,
+} from "../../../components/common";
 const JoinUs = () => {
   return (
     <ContentWrapper id="join">
@@ -15,9 +20,11 @@ const JoinUs = () => {
         </Title>
       </header>
       <section className="flex items-center justify-center">
-        <ActionBtn link="/join#top">
+        {/* whatsapp join button && turn off join form page */}
+        <WhatsappBtn>Join now</WhatsappBtn>
+        {/* <ActionBtn link="/join#top">
           Join now
-        </ActionBtn>
+        </ActionBtn> */}
       </section>
     </ContentWrapper>
   );
